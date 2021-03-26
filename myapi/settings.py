@@ -78,10 +78,14 @@ WSGI_APPLICATION = 'myapi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'rtbo00$api',
+        'USER': 'rtbo00',
+        'PASSWORD' : 'mysqldbpw',
+        'HOST' : 'rtbo00.mysql.pythonanywhere-services.com',
     }
 }
+
 
 
 # Password validation
